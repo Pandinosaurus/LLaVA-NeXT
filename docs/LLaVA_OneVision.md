@@ -64,6 +64,15 @@ accelerate launch --num_processes=8 \
 --output_path ./logs/
 ```
 
+## Data Visualization
+
+We provide visualization scripts to analyze the training data distribution in the notebook [llava_ov_plot.ipynb](../llava_ov_plot.ipynb). The notebook includes:
+
+- **Training Data Distribution by Category**: Visualizes data across Doc/Chart/Screen, General, Pure Language, Math/Reasoning, and General OCR categories with nested pie charts showing detailed dataset contributions.
+- **Training Data Distribution by Modality**: Shows the breakdown of single-image, multi-image, and video data with percentage calculations.
+- **Polar/Radar Charts**: Advanced visualizations for comparing model performance across different benchmarks.
+- **Timeline Visualizations**: Tracks the evolution of model capabilities over time.
+
 Task: video tasks. The video tasks are more computationally expensive. We recommend running them on a machine with a GPU with at least 16GB memory.
 
 ```bash
@@ -79,6 +88,15 @@ accelerate launch --num_processes=8 \
 --output_path ./logs/
 ```
 
+## Data Visualization
+
+We provide visualization scripts to analyze the training data distribution in the notebook [llava_ov_plot.ipynb](../playground/llava_ov_plot.ipynb). The notebook includes:
+
+- **Training Data Distribution by Category**: Visualizes data across Doc/Chart/Screen, General, Pure Language, Math/Reasoning, and General OCR categories with nested pie charts showing detailed dataset contributions.
+- **Training Data Distribution by Modality**: Shows the breakdown of single-image, multi-image, and video data with percentage calculations.
+- **Polar/Radar Charts**: Advanced visualizations for comparing model performance across different benchmarks.
+- **Timeline Visualizations**: Tracks the evolution of model capabilities over time.
+
 Task: interleave tasks (`llava-interleave-bench` already contains most of existing image-text tasks). `mmmu_test` contains single image and multiple images as input, we run the model to obtain a submission file and you need to submit it to the [leaderboard](https://eval.ai/web/challenges/challenge-page/1700/overview) to get the accuracy for MMMU (multi-image) result.
 
 ```bash
@@ -92,3 +110,12 @@ accelerate launch --num_processes=8 \
 --log_samples_suffix llava_onevision \
 --output_path ./logs/
 ```
+
+## Data Visualization
+
+We provide visualization scripts to analyze the training data distribution in the notebook [llava_ov_plot.ipynb](../playground/llava_ov_plot.ipynb). The notebook includes:
+
+- **Training Data Distribution by Category**: Visualizes data across Doc/Chart/Screen, General, Pure Language, Math/Reasoning, and General OCR categories with nested pie charts showing detailed dataset contributions.
+- **Training Data Distribution by Modality**: Shows the breakdown of single-image, multi-image, and video data with percentage calculations.
+- **Polar/Radar Charts**: Advanced visualizations for comparing model performance across different benchmarks.
+- **Timeline Visualizations**: Tracks the evolution of model capabilities over time.
